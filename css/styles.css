@@ -88,6 +88,10 @@ img {
   overflow: hidden;
 }
 
+.current {
+  color: var(--pressed-state-color);
+}
+
 /**
   |============================
   | Logo
@@ -380,6 +384,43 @@ img {
 
 .team-socials-icon {
   fill: var(--light-color);
+}
+
+/**
+  |============================
+  | Customers
+  |============================
+*/
+.customers {
+  padding-bottom: 120px;
+}
+
+.customers-title {
+  margin-bottom: 72px;
+  margin-top: 120px;
+}
+
+.customers-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border-radius: 4px;
+  border: 1px solid var(--subtle-text-color);
+  fill: var(--subtle-text-color);
+}
+.customers-link:hover,
+.customers-link:focus {
+  border-radius: 4px;
+  border: 1px solid var(--pressed-state-color);
+  fill: var(--pressed-state-color);
 }
 
 /**
