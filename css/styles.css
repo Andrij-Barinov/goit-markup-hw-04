@@ -92,6 +92,14 @@ img {
   color: var(--pressed-state-color);
 }
 
+.current::after {
+  border-radius: 2px;
+  border-bottom: 4px solid var(--pressed-state-color);
+  width: 66px;
+  height: 4px;
+  flex-shrink: 0;
+}
+
 /**
   |============================
   | Logo
