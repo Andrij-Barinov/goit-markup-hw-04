@@ -292,8 +292,8 @@ img {
 
 .modal-btn {
   padding: 0;
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   position: absolute;
   top: 24px;
   right: 24px;
@@ -306,7 +306,7 @@ img {
   cursor: pointer;
   fill: var(--dark-color);
   transition: background-color var(--transition-fast),
-    border var(--transition-fast);
+    border var(--transition-fast), fill var(--transition-fast);
 }
 
 .backdrop.is-hidden {
@@ -315,20 +315,19 @@ img {
   pointer-events: none;
 }
 
-.modal-btn:hover {
-  fill: var(--white-color);
-  background-color: var(--pressed-state-color);
-  border: none;
-}
-
+.modal-btn:hover,
 .modal-btn:focus {
-  fill: var(--white-color);
   background-color: var(--pressed-state-color);
   border: none;
 }
 
 .modal-btn-icon {
   transition: fill var(--transition-fast);
+}
+
+.modal-btn:hover .modal-btn-icon,
+.modal-btn:focus .modal-btn-icon {
+  fill: var(--white-color);
 }
 
 /**
