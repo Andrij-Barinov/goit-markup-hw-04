@@ -200,15 +200,24 @@ img {
   align-items: center;
 }
 
+.header-nav-item {
+  transition: color var(--transition-fast);
+}
+
 .current {
   color: var(--pressed-state-color);
+  position: relative;
 }
 
 .current::after {
   content: "";
+  /* position: absolute; */
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: var(--pressed-state-color);
   display: block;
   border-radius: 2px;
-  border-bottom: 4px solid var(--pressed-state-color);
 }
 /**
   |============================
