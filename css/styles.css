@@ -504,6 +504,7 @@ img {
   gap: 24px;
   justify-content: center;
   margin-bottom: 72px;
+  margin-top: 100px;
 }
 
 .filter-btn {
@@ -517,8 +518,8 @@ img {
   font-family: var(--main-font);
   color: var(--primary-brand-color);
   text-align: center;
-  transition: background-color var(--transition-fast),
-    color var(--transition-fast), border var(--transition-fast),
+  transition: color var(--transition-fast),
+    background-color var(--transition-fast), border-color var(--transition-fast),
     box-shadow var(--transition-fast);
 }
 
@@ -537,8 +538,9 @@ img {
   |============================
 */
 .portfolio {
-  padding-top: 96px;
+  display: block;
   padding-bottom: 120px;
+  transition: box-shadow var(--transition-fast);
 }
 
 .portfolio-list {
@@ -555,8 +557,8 @@ img {
     transform var(--transition-fast);
 }
 
-.portfolio-item:focus,
-.portfolio-item:hover {
+.portfolio:focus,
+.portfolio:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
