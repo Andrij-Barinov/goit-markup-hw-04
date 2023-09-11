@@ -188,14 +188,11 @@ img {
   gap: 40px;
 }
 
-.header-address-item {
-  transition: color var(--transition-fast);
-}
-
 .header-nav-link {
   display: block;
   padding-top: 24px;
   padding-bottom: 20px;
+  transition: color var(--transition-fast);
 }
 
 .header-address-list {
@@ -206,14 +203,14 @@ img {
 
 .header-nav-item {
   transition: color var(--transition-fast);
-  position: relative;
 }
 
-.current {
+.header-nav-item.current {
+  position: relative;
   color: var(--pressed-state-color);
 }
 
-.current::after {
+.header-nav-item.current::after {
   content: "";
   position: absolute;
   left: 0;
