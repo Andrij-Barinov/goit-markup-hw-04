@@ -205,12 +205,12 @@ img {
   transition: color var(--transition-fast);
 }
 
-.header-nav-item.current {
+.current {
   position: relative;
   color: var(--pressed-state-color);
 }
 
-.header-nav-item.current::after {
+.current::after {
   content: "";
   position: absolute;
   left: 0;
