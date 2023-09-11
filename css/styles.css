@@ -551,14 +551,17 @@ img {
   row-gap: 48px;
 }
 
-.portfolio-item {
-  flex-basis: calc((100% - 24px * 2) / 3);
-  transition: box-shadow var(--transition-fast),
-    transform var(--transition-fast);
+.portfolio-link {
+  display: block;
 }
 
-.portfolio:focus,
-.portfolio:hover {
+.portfolio-item {
+  flex-basis: calc((100% - 24px * 2) / 3);
+  transition: box-shadow var(--transition-fast);
+}
+
+.portfolio-link:focus,
+.portfolio-link:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -586,13 +589,11 @@ img {
   padding: 40px 32px;
   background-color: var(--primary-brand-color);
   transform: translateY(100%);
-}
-
-.overlay-text {
   color: var(--light-color);
 }
 
-.portfolio-item:hover .overlay {
+.portfolio-link:hover .overlay,
+.portfolio-link:focus .overlay {
   transform: translateY(0%);
 }
 
