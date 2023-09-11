@@ -292,13 +292,14 @@ img {
 
 .modal-btn {
   padding: 0;
+  width: 16px;
+  height: 16px;
   position: absolute;
   top: 24px;
   right: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 7px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background-color: var(--accent-color);
@@ -314,7 +315,12 @@ img {
   pointer-events: none;
 }
 
-.modal-btn:hover,
+.modal-btn:hover {
+  fill: var(--white-color);
+  background-color: var(--pressed-state-color);
+  border: none;
+}
+
 .modal-btn:focus {
   fill: var(--white-color);
   background-color: var(--pressed-state-color);
